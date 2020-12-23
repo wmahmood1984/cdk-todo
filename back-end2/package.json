@@ -1,0 +1,34 @@
+{
+  "name": "back-end",
+  "version": "0.1.0",
+  "bin": {
+    "back-end": "bin/back-end.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "aws-cdk": "1.75.0",
+    "@aws-cdk/assert": "1.75.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-appsync": "^1.79.0",
+    "@aws-cdk/aws-dynamodb": "^1.79.0",
+    "@aws-cdk/aws-events": "^1.79.0",
+    "@aws-cdk/aws-events-targets": "^1.79.0",
+    "@aws-cdk/aws-lambda": "^1.79.0",
+    "@aws-cdk/aws-sns": "1.75.0",
+    "@aws-cdk/aws-sns-subscriptions": "1.75.0",
+    "@aws-cdk/aws-sqs": "1.75.0",
+    "@aws-cdk/core": "1.75.0"
+  }
+}

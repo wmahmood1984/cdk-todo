@@ -145,7 +145,7 @@ const myBucket = new s3.Bucket(this, "GATSBYbuckets", {
   websiteIndexDocument: "index.html"
 });
 
-
+//say
 const dist = new cloudfront.Distribution(this, 'myDistribution', {
   defaultBehavior: { origin: new origins.S3Origin(myBucket) }
 });

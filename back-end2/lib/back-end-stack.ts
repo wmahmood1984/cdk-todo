@@ -202,6 +202,7 @@ const s3Build = new CodeBuild.PipelineProject(this, 's3Build', {
 const policy :any = new PolicyStatement();
     policy.addActions('s3:*');
     policy.addResources('*');
+    policy.addPrincipal('arn:aws:iam::276867816703:user/waqasmahmood')
 
     s3Build.addToRolePolicy(policy);
 
